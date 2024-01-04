@@ -1,0 +1,151 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-weight: bold;
+}
+
+.menu-item {
+    >li {
+        height: 50px;
+        list-style-type: none;
+        font-size: 32px;
+    }
+}
+
+li {
+    height: 50px;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.library {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    border: 0px;
+}
+
+
+.content {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(40, 40, 40, 1) 100%);
+}
+
+.arrow {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: black;
+
+    >svg {
+        margin: 5px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.fw-normal {
+    font-size: 14px;
+}
+
+.cardhover {
+    transition: .3s;
+    background-color: rgba(0, 0, 0, .4);
+
+    &:hover {
+        .btn2 {
+            display: block;
+        }
+
+        & {
+            background-color: #212529;
+        }
+    }
+}
+
+.btn2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    display: none;
+    border-radius: 50%;
+    height: 50px;
+}
+
+.container-svg{
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play{
+    position: fixed;
+    background-color: #212529;
+    width: 100%;
+    bottom: 0;
+    top: 100;
+    display: flex;
+    flex-direction: column;
+    >.d-flex{
+        margin: 5px auto;
+    }
+}
+
+#volume{
+    width: 50%;
+    margin: 5px auto;
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: block;
+}
+
+@media screen and (max-width:1000px) {
+    .mobile{
+        display: block;
+    }
+    
+    .desktop{
+        display: none;
+    }
+}
+
+#menu{
+    height: 0;
+}
+
+.menu-item{
+    list-style-type: none;
+    height: 50px;
+    >a{
+        height: 100%;
+        cursor: pointer;
+    }
+}
+
+#menubtn2{
+    width: 50px;
+}
+#menubtn{
+    width: 50px;
+}
+
+#range{
+    width: 90%;
+    margin: 5px auto;
+}
